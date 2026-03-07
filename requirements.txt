@@ -1,5 +1,8 @@
-asyncio
-pandas
 fastapi
 uvicorn
+
 python-dotenv
+pandas
+
+asyncio
+openai-agents
