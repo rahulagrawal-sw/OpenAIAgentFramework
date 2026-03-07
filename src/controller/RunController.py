@@ -33,7 +33,7 @@ async def run_search_agent(input_query: str):
     input = f"Search term: {input_query}"
     try:
         trace_id = gen_trace_id()
-        print(f"Generated trace id: {trace_id}")
+        print(f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}")
         with trace("RA Search Agent trace", trace_id=trace_id):
             result = await Runner.run(
                 search_agent,
