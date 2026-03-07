@@ -2,3 +2,4 @@ asyncio
 pandas
 fastapi
 uvicorn
+python-dotenv
