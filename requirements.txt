@@ -8,3 +8,4 @@ asyncio
 openai-agents
 
 gradio
+pydantic
