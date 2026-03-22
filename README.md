@@ -11,7 +11,8 @@ This is experimentation zone to try
 Steps followed during project development
 <ul>
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1; pip install -r requirements.txt
+#.\.venv\Scripts\Activate.ps1; pip install -r requirements.txt
+.\.venv\Scripts\pip.exe install -r .\requirements.txt
 c:\ML\OpenAIAgentFramework\.venv\Scripts\python.exe -c "from fastapi import FastAPI; print('OK')"
 Creating .vscode/settings.json to set the project's Python interpreter to the project .venv:
 c:\ML\OpenAIAgentFramework\.venv\Scripts\python.exe -m uvicorn src.main:app --host 127.0.0.1 --port 8000
