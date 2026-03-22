@@ -8,3 +8,7 @@ asyncio
 openai-agents
 
 gradio
+pydantic
+
+agno
+sqlalchemy

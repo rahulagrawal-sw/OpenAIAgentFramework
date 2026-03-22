@@ -4,12 +4,17 @@ import os
 
 from .controller.RunController import router as run_router
 from .controller.RunController import run_search_agent_router
+from .financeagent.finance_agent_controller import run_finance_agent_router
+from .financeagent.agno.agno_finance_agent_controller import run_agno_finance_agent_router
 
 app = FastAPI()
 load_dotenv(override=True)
 
 app.include_router(run_router)
 app.include_router(run_search_agent_router)
+app.include_router(run_finance_agent_router)
+app.include_router(run_agno_finance_agent_router)
+
 
 @app.get("/")
 def read_root():
