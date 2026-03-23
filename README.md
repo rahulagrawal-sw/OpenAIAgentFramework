@@ -31,3 +31,4 @@ open browser and paste url "http://127.0.0.1:8000/run/finance_agent?input_query=
 Search term: Suggest top 2 companies to invest in NSE India
 
 -----------------------------------------------------------------------------------------------------------------------------------
+python src/memory/sqllite_session.py
