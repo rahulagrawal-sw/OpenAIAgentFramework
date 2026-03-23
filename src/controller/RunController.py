@@ -15,13 +15,7 @@ def run():
 
 
 @run_search_agent_router.get("/run/search_agent")
-async def run_search_agent_api(input_query: Optional[str] = Query(
-        None, 
-        min_length=3, 
-        max_length=100, 
-        regex="^[a-zA-Z0-9 ]*$",  # Only alphanumeric and spaces
-        description="Search query string"
-    )):
+async def run_search_agent_api(input_query: Optional[str]):
     # Method body starts below
     """Run run_search_agent_router endpoint."""
     agent_output = await run_search_agent(input_query)
